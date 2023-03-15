@@ -18,14 +18,11 @@ export enum WorkerTitle {
   OTHER = 'Other',
 }
 
-interface IUser {
+export interface IUser {
   name: string;
   email: string;
   phoneNumer: string;
-}
-
-export interface IOwner extends IUser {
-  role: Role.OWNER;
+  role: Role;
 }
 
 export interface IAdmin extends IUser {

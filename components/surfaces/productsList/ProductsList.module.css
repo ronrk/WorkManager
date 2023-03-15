@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-areas: 'products filters';
+}
+.container th {
+  text-align: left;
+}
+
+.products {
+  grid-area: products;
+}
+.filters {
+  grid-area: filters;
+}
