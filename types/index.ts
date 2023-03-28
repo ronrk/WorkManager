@@ -7,6 +7,14 @@ import {
 import { Department } from './IUser';
 
 export const navLists = {
+  worker: [
+    { path: '/work/my-jobs', label: 'My Jobs' },
+    { path: '/work/updates', label: 'Updates' },
+    { path: '/work/profile', label: 'Profile' },
+  ],
+};
+
+export const sideBarLists = {
   admin: [
     { path: '/', label: 'Dashboard' },
     { path: '/products', label: 'Products' },

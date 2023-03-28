@@ -1,3 +1,4 @@
+import PrimaryButton from '@/components/utility/primaryButton/PrimaryButton';
 import styles from './ProductsListFilters.module.css';
 
 export interface IProductsListFilters {}
@@ -8,7 +9,7 @@ const ProductsListFilters: React.FC<IProductsListFilters> = () => {
       <h3>Filters</h3>
       <div>
         <label htmlFor="">Sort By</label>
-        <button>clear</button>
+        <PrimaryButton label="clear" />
       </div>
       <div className="filters">
         <h5>Brand</h5>

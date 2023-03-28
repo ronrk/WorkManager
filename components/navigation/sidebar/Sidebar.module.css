@@ -1,0 +1,8 @@
+.sidebar {
+  grid-area: sidebar;
+  max-width: 200px;
+}
+.sidebar ul {
+  --gap: 1rem;
+  padding-inline: 0.5rem 1rem;
+}

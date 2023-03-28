@@ -1,0 +1,6 @@
+.linkItem {
+  transition: all 50ms ease-in;
+}
+.linkItem:hover {
+  color: hsl(var(--clr-navy));
+}

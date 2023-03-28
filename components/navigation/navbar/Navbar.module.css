@@ -1,2 +1,9 @@
-.container {
+.navbar {
+  grid-area: navbar;
+  width: 100%;
+}
+
+.navbar ul {
+  justify-content: center;
+  padding-block: 1rem;
 }
