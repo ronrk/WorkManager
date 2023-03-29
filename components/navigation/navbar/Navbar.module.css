@@ -1,6 +1,7 @@
 .navbar {
   grid-area: navbar;
-  width: 100%;
+  align-items: center;
+  padding-inline: 2.4rem;
 }
 
 .navbar ul {

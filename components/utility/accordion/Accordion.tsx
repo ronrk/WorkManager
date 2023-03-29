@@ -1,6 +1,6 @@
 import { accordionItems } from '@/types';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Accordion.module.css';
 import AccordionButton from './AccordionButton';
 import AccordionItem from './AccordionItem';
@@ -13,17 +13,25 @@ export interface IAccordionProps {
 const Accordion: React.FC<IAccordionProps> = ({ label, path }) => {
   const [openAccordion, setOpenAccordion] = useState(false);
   const router = useRouter();
-  let open = router.pathname === path && openAccordion;
+
+  useEffect(() => {
+    if (router.pathname === path) {
+      setOpenAccordion(true);
+    } else {
+      setOpenAccordion(false);
+    }
+  }, [path, router.pathname]);
+
   return (
     <div className={styles.container}>
       <AccordionButton
         label={label}
         path={path}
         onToggle={() => setOpenAccordion((prev) => !prev)}
-        open={open}
+        open={openAccordion}
       />
 
-      {open && (
+      {openAccordion && (
         <ul>
           {accordionItems.map((item) => (
             <AccordionItem

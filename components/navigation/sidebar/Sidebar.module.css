@@ -1,6 +1,7 @@
 .sidebar {
   grid-area: sidebar;
   max-width: 200px;
+  padding: 2.3rem 0;
 }
 .sidebar ul {
   --gap: 1rem;

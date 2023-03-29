@@ -15,7 +15,11 @@ const AccordionButton: React.FC<IAccordionButtonProps> = ({
 }) => {
   return (
     <div className="flex jc-between">
-      <PrimaryLink path={path} label={label} onClick={onToggle} />
+      <PrimaryLink
+        path={path}
+        label={label}
+        onClick={open ? () => {} : onToggle}
+      />
       <button onClick={onToggle}>
         {open ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
       </button>

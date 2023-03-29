@@ -84,19 +84,19 @@ ul {
   font-weight: 700;
 }
 
-.color-black {
+.text-black {
   color: hsl(var(--clr-black));
 }
-.color-navy {
+.text-navy {
   color: hsl(var(--clr-navy));
 }
-.color-gray-dark {
+.text-gray-dark {
   color: hsl(var(--clr-gray-dark));
 }
-.color-gray-light {
+.text-gray-light {
   color: hsl(var(--clr-gray-light));
 }
-.color-white {
+.text-white {
   color: hsl(var(--clr-white));
 }
 
