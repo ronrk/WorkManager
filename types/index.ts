@@ -31,6 +31,11 @@ export const sideBarLists = {
     { path: '/jobs', label: 'Jobs' },
   ],
 };
+export const accordionItems = [
+  { label: 'Update', path: '/update' },
+  { label: 'Add New', path: '/create' },
+  { label: 'Delete', path: '/delete' },
+];
 
 export const DUMMY_SOUND_PRODUCTS: ISoundProduct[] = [
   {

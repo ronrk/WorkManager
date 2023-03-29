@@ -5,7 +5,7 @@ import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   const { currentUser } = useSelector(selectUserValue);
-  console.log(currentUser);
+  // console.log(currentUser);
   return <section></section>;
 };
 

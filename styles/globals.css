@@ -125,3 +125,10 @@ ul {
   flex-direction: column;
   gap: var(--gap, 2rem);
 }
+
+.jc-between {
+  justify-content: space-between;
+}
+.al-between {
+  align-items: space-between;
+}

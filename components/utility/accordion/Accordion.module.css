@@ -1,0 +1,11 @@
+.container button {
+  font-size: 1.3rem;
+  transition: all 50ms ease-in;
+}
+.container button:hover {
+  color: hsl(var(--clr-black));
+}
+
+.container ul li {
+  margin: 0.5rem;
+}

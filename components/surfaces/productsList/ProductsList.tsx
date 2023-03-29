@@ -16,7 +16,7 @@ const ProductsList: React.FC<IProductsList> = ({ products }) => {
     products.map((product) => product.department)
   );
 
-  console.log({ productsBrands, productsCategory, productsDepartment });
+  // console.log({ productsBrands, productsCategory, productsDepartment });
   return (
     <div className={styles.container}>
       <table className={styles.products}>

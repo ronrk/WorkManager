@@ -1,3 +1,4 @@
+import Accordion from '@/components/utility/accordion/Accordion';
 import PrimaryLink from '@/components/utility/primaryLink/PrimaryLink';
 import { selectUserValue } from '@/store/slices/userSlice';
 import { Role, sideBarLists } from '@/types';
@@ -12,9 +13,17 @@ const getNavListFromArray = (
     label: string;
   }[]
 ) =>
-  arr.map((item) => (
-    <PrimaryLink key={item.path} path={item.path} label={item.label} />
-  ));
+  arr.map((item) =>
+    item.label === 'Dashboard' ? (
+      <li key={item.path}>
+        <PrimaryLink path={item.path} label={item.label} />
+      </li>
+    ) : (
+      <li key={item.path}>
+        <Accordion {...item} />
+      </li>
+    )
+  );
 
 const Sidebar: React.FC<ISidebar> = () => {
   const { currentUser } = useSelector(selectUserValue);
