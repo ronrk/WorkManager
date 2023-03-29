@@ -6,7 +6,7 @@ export interface IPrimaryLink {
   path: string;
   label: string;
   small?: boolean;
-  onClick(): void;
+  onClick?(): void;
 }
 
 const PrimaryLink: React.FC<IPrimaryLink> = ({
